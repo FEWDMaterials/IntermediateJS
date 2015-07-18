@@ -37,4 +37,8 @@ Ok so here is what we will *really* be doing...
 
 <b> We will explore how the main objectives -- quite abstract principles -- come into play as we implement something quite abstract -- a library that handles DOM manipulation.</b>
 
+##### Implementing the $('.selector') function
 
+1. Literally with just literals
+2. The constructor pattern and you
+3. Object.create() -- started from the bottom, now we here
