@@ -25,3 +25,16 @@ These are our three main objectives for today:
 </div>
 
 #### Game plan 
+
+Ok so here is what we will *really* be doing...
+
+<b>OBJECTIVE</b>: recreate jQuery. <br>
+<b>WHY</b>: 
+
+* We use jQuery (most likely) every single day. 
+* It is the single most popular javascript library on earth today (for now, anyways). 
+* But what would happen if jQuery was inaccessible or we were not allowed to use it?
+
+<b> We will explore how the main objectives -- quite abstract principles -- come into play as we implement something quite abstract -- a library that handles DOM manipulation.</b>
+
+
