@@ -1,6 +1,11 @@
-### HELLO, WROLD!
-
-Welcome to the *Intermediate JavaScript Workshop*! Today we will programming concepts and topics in javascript that will teach you how to write clean, reusable code. 
+<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+<div class="mdl-card mdl-cell mdl-cell--12-col">
+  <div class="mdl-card__supporting-text">
+    <h2>HELLO, WROLD!</h2>
+    Welcome to the *Intermediate JavaScript Workshop*! Today we will programming concepts and topics in javascript that will teach you how to write clean, reusable code. 
+  </div>
+</div>
+</section>
 
 #### In a nutshell
 
