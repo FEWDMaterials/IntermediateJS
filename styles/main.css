@@ -1,0 +1,22 @@
+/* CURRENTLY IN: styles/main.css */
+.slider {
+	width: 250px;
+    height: 250px;
+    overflow: hidden;
+    margin: 20px auto;
+}
+
+.slider__slider {
+	position: relative;
+    /*transition: left 0.3s ease;*/
+    box-sizing: border-box;
+    left: 0;
+}
+
+.slider__item {
+	width: 250px;
+	height: 250px;
+	border: 1px solid black;
+	box-sizing: border-box;
+	float: left;
+}
