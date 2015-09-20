@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html>
     <head>
@@ -365,31 +364,31 @@ body .value-props {
 </nav>
 
 <section class="docs-section" style="padding-left: 10%;">
-    <h1 id="hello-wrold-">Hello, Wrold!</h1>
-<p>Welcome to Intermediate Javascript!</p>
-<h2 id="about-me">About Me</h2>
-<p><div class="profile cf" style="height: 100px;">
-    <img style="width: 100px; height: 100px; float: left;" src="https://pbs.twimg.com/profile_images/537060432402718721/SW0m0JTl.jpeg" class="profile__image profile__image--rounded profile--float_l">
-        <span style="vertical-align: middle; display: inline-black;" class="profile__desc profile--typ_p profile--float_l">Taqqui Karim is a <a href="https://twitter.com/sharehoney" target="_blank">software engineer</a> by day, <a href="https://generalassemb.ly/instructors/taqqui-karim/1667" target="_blank">FEWD instructor</a> by weekend, and <a href="http://fewd.us/" target="_blank">hacker of all things awesome</a> by night.</span>
-        </div><br/></p>
-<h2 id="what-s-going-down-today">What&#39;s going down today</h2>
-<p>Today we will discuss how to create javascript that is reusable in multiple contexts. In order to pull this off, we will have to learn about several concepts, specifically:</p>
-<ol>
-<li>functions</li>
-<li>closures / scope</li>
-<li>object constructors</li>
-</ol>
-<p>We will then apply these concepts in creating an image slideshow plugin.</p>
-<h2 id="game-plan">Game Plan</h2>
-<p>The main, overarching goal of today is to <strong>build a slideshow in javascript</strong>.</p>
-<p>That being said, we aspire to build it well, and in doing so, we must explore and learn a few <strong>design patterns</strong>.</p>
-<p>We will break today up into three sections:</p>
-<h5 id="simple">Simple</h5>
-<p>First, we will implement the slideshow as simply as possible. In this case, &quot;simple&quot; really just means &quot;inflexible&quot; and easy to reason about.</p>
-<h5 id="object">Object</h5>
-<p>Then, we will explore why our simplistic implementation cannot pass muster. Ideally, something that is simple and works should be sufficient. But we&#39;ll see that it isn&#39;t. And we&#39;ll discuss how to improve it.</p>
-<h5 id="plugin">Plugin</h5>
-<p>This part is mostly for fun, but we will discuss how we can take our code and turn it into a jQuery plugin for mass resuse.</p>
+    <h1 id="requirements">Requirements</h1>
+<p>Ideally, we now have a functioning image slider. Let&#39;s not define what an &quot;object&quot; version of this should look like:</p>
+<h4 id="javascript">JavaScript</h4>
+<pre><code class="lang-js">var s = new Slider({
+    // options
+});
+
+s.goToSlide(1); // takes you to slide one
+s.pause(); // pauses slide
+// ... etc ...
+</code></pre>
+<p>More importantly, we should be able to do the following:</p>
+<pre><code class="lang-js">var s = new Slider({
+    // options
+});
+var t = new Slider({
+    // options
+});
+
+s.goToSlide(1); // takes you to slide one
+t.goToSlide(4); // takes you to 4 for the _other_ slide
+s.pause(); // pauses slide
+t.start(); // starts slide on t
+// ... etc ...
+</code></pre>
 
 </section>
 
@@ -444,5 +443,4 @@ body .value-props {
         </script>
     </body>
 </html>
-
 
